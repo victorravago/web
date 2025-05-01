@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+*{
+	border:0;
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+
+body{
+	color:rgb(100,100,100);
+	font-family: 'IBM Plex Sans', serif;
+	font-size:100%;
+	line-height: 1.3
+}
+
+p{
+	font-size: 1.4rem;
+	margin:0 0 24px 0
+}
+
+header{
+	
+	margin: 0;
+    padding: 0;
+	z-index:1;
+	background-color: #fff;
+}
+
+nav {
+	position: relative;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-right: 20px;
+  }
+  
+  ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  ul li a:hover {
+    color: grey;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .checkbtn {
+	
+      display: block;
+      order: 1;
+      margin-right: 20px;
+    }
+  
+    ul {
+      position: fixed;
+      top: 50px;
+      right: -100%;
+      background-color: white;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+    }
+  
+    ul li {
+      margin: 20px 0;
+    }
+  
+    ul li a {
+      font-size: 20px;
+    }
+  
+    #check:checked ~ ul {
+      right: 0;
+    }
+  }
+
+
+.parallas, .main, .texto{margin:0 auto}
+
+.parallax{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height: 90rem;
+	max-width: 100%;
+	position: relative;
+}
+
+.texto-interior{
+	color:#fff;
+	font-size: 2rem;
+	font-weight: bold;
+	left: 10%;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 80%
+}
+	
+.img-uno{
+    background-image: url('dany-mag.gif');
+    width: 100%;
+	z-index: -1;
+    
+}
+
+.img-dos{
+	background-image:url("loreto-digital_board-02\ .jpg");
+	width: 100%;
+}
+
+.img-tres{
+	background-image:url("vr_film.jpg");
+	width: 100%;
+}
+
+
+.img-cuatro{
+	background-image:url("vr_montana-fondo.png");
+	width: 100%;
+  
+}
+
+.img-cinco{
+  background-image: url("vr_about-me-foto.gif");
+  width: 100%;
+}
+
+
+.texto{
+	padding:5%;
+	width: 100%;
+	height: 100%;
+	position: center;
+}
+
+
